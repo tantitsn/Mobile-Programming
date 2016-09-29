@@ -3,4 +3,13 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="keep_me_sign_in">Keep me Sign In</string>
+    <string name="sign_in_with_facebook">Sign In with FACEBOOK</string>
+    <string name="sign_in_with_gmail">SIGN IN with GMAIL</string>
+    <string name="sign_in_with_twitter">SIGN IN WITH TWITTER</string>
+    <string name="email">Email</string>
+    <string name="handphone">Handphone</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

@@ -16,18 +16,25 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="137dp"
         android:src="@drawable/logohp"
         android:id="@+id/logo"
+        android:layout_gravity="center"
 
         />
 
 </LinearLayout>
 
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,15 +53,68 @@
         android:layout_height="wrap_content"
         android:id="@+id/EdPassword"
         android:inputType="textPassword" />
-    <Button
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:id="@+id/BtnLogin"
-        android:layout_gravity="end"
-        />
+        android:text="@string/keep_me_sign_in"
+        android:textSize="10dp"/>
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/login"
+           android:id="@+id/BtnLogin"
+           android:layout_weight="0.5"
+
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/register"
+           android:id="@+id/BtnRegister"
+           android:layout_weight="0.5"
+
+           />
+
+   </LinearLayout>
 
 
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_with_facebook"
+        android:id="@+id/btnFacebook"
+        android:background="@color/fb"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_with_gmail"
+        android:id="@+id/btnGmail"
+        android:background="@color/gmail"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_with_twitter"
+        android:id="@+id/btnTwitter"
+        android:layout_marginTop="10dp"
+        android:background="@color/twitter"
+        android:textColor="#ffffff" />
 
+
+
+</LinearLayout>
 </LinearLayout>
