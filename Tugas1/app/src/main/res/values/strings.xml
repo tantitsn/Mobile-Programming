@@ -12,4 +12,5 @@
     <string name="handphone">Handphone</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="halaman_login_berhasil">Halaman Login Berhasil</string>
 </resources>

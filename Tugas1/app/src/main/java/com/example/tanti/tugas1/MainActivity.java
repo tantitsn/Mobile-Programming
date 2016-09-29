@@ -65,6 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (user.getText().toString().equals("admin") && pass.getText().toString().equals("1234"))
                 {
                     Toast.makeText(getApplicationContext(),"Selamat Anda Berhasil Login",Toast.LENGTH_LONG).show();
+                    Intent log = new Intent(this,LoginBerhasil.class);
+                    startActivity(log);
+
+                    user.setText("");
+                    pass.setText("");
+
                 }else
                 {
                     Toast.makeText(getApplicationContext(),"Mohon Maaf Anda Gagal Login",Toast.LENGTH_LONG).show();
@@ -75,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 Intent reg = new Intent(this,Register.class);
                 startActivity(reg);
+                finish();
 
 
                 break;

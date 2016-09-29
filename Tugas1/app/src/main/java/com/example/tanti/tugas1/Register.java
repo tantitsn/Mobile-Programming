@@ -45,11 +45,21 @@ Button btnCancel , btnSave;
 
 
             case R.id.BtnSave:
-                user.setText("");
-                pass.setText("");
-                email.setText("");
-                hp.setText("");
-                Toast.makeText(getApplicationContext(),"Selamat anda berhasil mendaftar",Toast.LENGTH_LONG).show();
+
+                if (user.getText().toString().equals("") || pass.getText().toString().equals("")||email.getText().toString().equals("")|| hp.getText().toString().equals(""))
+                {
+                    Toast.makeText(getApplicationContext(),"Mohon isi data anda dengan lengkap",Toast.LENGTH_LONG).show();
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(),"Selamat anda berhasil mendaftar",Toast.LENGTH_LONG).show();
+                    user.setText("");
+                    pass.setText("");
+                    email.setText("");
+                    hp.setText("");
+                }
+
+
 
                 break;
             default:
